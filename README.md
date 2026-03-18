@@ -1,4 +1,4 @@
-# Hip Hop Digital Archive: Preservação e Análise da Cultura Urbana
+# Hip Hop Digital: Preservação e Análise da Cultura Urbana
 
 ## 📑 Resumo (Abstract)
 Este projeto consiste no desenvolvimento de uma plataforma web de alta fidelidade dedicada à documentação, análise e difusão dos pilares fundamentais da cultura Hip Hop. Através de uma arquitetura de informação estruturada, o sistema funciona como um repositório digital que investiga as manifestações artísticas (Graffiti, DJing, Breaking e MCing) sob uma ótica historiográfica e sociotécnica.
