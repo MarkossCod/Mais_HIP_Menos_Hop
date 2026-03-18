@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>StreetVibe - Hip-Hop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>StreetVibe</h1>
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Hip-Hop</a></li>
+      <li><a href="#plataformas">Música</a></li>
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="formulario/form.html">Formulário</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="banner"></div>
+    <h2>Hip-Hop, Trap & Rap</h2>
+    <p>A cultura das ruas, o ritmo da revolução.</p>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre hidden">
+    <h2>O que é Hip-Hop?</h2>
+    <p>
+      O Hip-Hop é mais que música — é cultura. Nascido nas ruas, envolve rap, DJ, breakdance e grafite.
+      O Trap é uma vertente moderna, com batidas pesadas e letras intensas.
+    </p>
+  </section>
+
+  <!-- CULTURA -->
+  <section class="cultura hidden">
+    <div class="cultura-container">
+      
+      <div class="texto">
+        <h2>Cultura Hip-Hop</h2>
+        <p>
+          O Hip-Hop vai além da música. Ele representa resistência, expressão e identidade.
+          Nas ruas, artistas usam o rap, o grafite e a dança para contar histórias reais
+          e transformar a realidade ao seu redor.
+        </p>
+      </div>
+
+      <div class="imagem">
+        <img src="imagens/img_section.jpg" alt="Cultura Hip-Hop">
+      </div>    
+
+    </div>
+  </section>
+
+  <!-- PLATAFORMAS -->
+  <section id="plataformas" class="plataformas hidden">
+    <h2>Ouça nas plataformas</h2>
+    <div class="cards">
+      <div class="card" onclick="abrir('https://spotify.com')">Spotify</div>
+      <div class="card" onclick="abrir('https://youtube.com')">YouTube</div>
+      <div class="card" onclick="abrir('https://soundcloud.com')">SoundCloud</div>
+      <div class="card" onclick="abrir('https://deezer.com')">Deezer</div>
+    </div>
+  </section>
+
+
+<!-- NOTÍCIAS -->
+<section id="noticias" class="noticias hidden">
+  <h2>Notícias do Mundo da Música</h2>
+
+  <div class="noticias-container">
+
+    <!-- NOTÍCIA 1 -->
+    <div class="noticia">
+      <h3>Bad Bunny domina charts globais</h3>
+      <p>
+        O artista segue liderando plataformas com novos lançamentos e consolidando
+        sua influência mundial no trap latino.
+      </p>
+      <button onclick="abrir('https://www.billboard.com/')">
+        Quero saber mais
+      </button>
+    </div>
+
+    <!-- NOTÍCIA 2 -->
+    <div class="noticia">
+      <h3>Drake anuncia novo projeto</h3>
+      <p>
+        Rumores indicam um álbum surpresa com colaborações de peso no cenário do hip-hop.
+      </p>
+      <button onclick="abrir('https://www.rollingstone.com/music/')">
+        Quero saber mais
+      </button>
+    </div>
+
+    <!-- NOTÍCIA 3 -->
+    <div class="noticia">
+      <h3>Trap brasileiro em alta</h3>
+      <p>
+        Artistas nacionais estão ganhando destaque internacional e expandindo o gênero.
+      </p>
+      <button onclick="abrir('https://www.kondzilla.com/')">
+        Quero saber mais
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>© 2026 StreetVibe - Cultura Hip-Hop</p>
+    <p>Desenvolvido para amantes de Rap, Trap e cultura urbana</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function abrir(link) {
+      window.open(link, "_blank");
+    }
+
+    // Animação ao aparecer
+    const elements = document.querySelectorAll('.hidden');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    elements.forEach(el => observer.observe(el));
+
+  </script>
+
+</body>
+</html>

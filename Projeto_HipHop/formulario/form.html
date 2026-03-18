@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário - StreetVibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Formulário de Cadastro</h1>
+
+    <form>
+
+      <!-- Nome -->
+      <label>Nome completo</label>
+      <input type="text" placeholder="Digite seu nome completo" required>
+
+      <!-- Email -->
+      <label>Email</label>
+      <input type="email" placeholder="Digite seu email" required>
+
+      <!-- Telefone -->
+      <label>Telefone</label>
+      <input type="tel" placeholder="(00) 00000-0000">
+
+      <!-- Senha -->
+      <label>Senha</label>
+      <input type="password" placeholder="Digite sua senha" required>
+
+      <!-- Data -->
+      <label>Data de nascimento</label>
+      <input type="date">
+
+      <!-- Cidade -->
+      <label>Cidade / Estado</label>
+      <select>
+        <option>Selecione</option>
+        <option>São Paulo</option>
+        <option>Rio de Janeiro</option>
+        <option>Minas Gerais</option>
+        <option>Bahia</option>
+        <option>Espírito Santo</option>
+      </select>
+
+      <!-- Gênero -->
+      <label>Gênero</label>
+      <div class="radio-group">
+        <label><input type="radio" name="genero"> Masculino</label>
+        <label><input type="radio" name="genero"> Feminino</label>
+        <label><input type="radio" name="genero"> Prefiro não informar</label>
+      </div>
+
+        <!-- Interesses -->
+        <label>Interesses</label>
+        <div class="checkbox-group">
+        <label><input type="checkbox"> Rap</label>
+        <label><input type="checkbox"> Trap</label>
+        <label><input type="checkbox"> DJ / Produção Musical</label>
+        <label><input type="checkbox"> Breakdance</label>
+        <label><input type="checkbox"> Grafite</label>
+        </div>
+
+      <!-- Mensagem -->
+      <label>Apresentação</label>
+      <textarea rows="4" placeholder="Fale um pouco sobre você..."></textarea>
+
+      <!-- Upload -->
+      <label>Foto de perfil</label>
+      <input type="file">
+
+      <!-- Botões -->
+      <div class="botoes">
+        <button type="submit">Enviar</button>
+        <button type="reset" class="reset">Limpar</button>
+        <button type="button" class="voltar" onclick="window.location.href='../index.html'">
+          Voltar
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>

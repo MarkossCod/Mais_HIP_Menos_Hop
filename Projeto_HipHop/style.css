@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+
+
+
+nav h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #ff4d6d;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4d6d;
+  transform: scale(1.1);
+}
+
+/* SEÇÕES */
+section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* IMAGEM DE FUNDO */
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('imagens/img_banner.jpg') center/cover no-repeat;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+/* OVERLAY ESCURO */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* TEXTO */
+.hero h2 {
+  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  animation: fadeIn 1.5s ease;
+  position: relative;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.9;
+  position: relative;
+}
+
+/* NOTÍCIAS */
+.noticias {
+  background: #eef1f5;
+  text-align: center;
+}
+
+.noticias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.noticia {
+  background: #ffffff;
+  padding: 25px;
+  width: 300px;
+  border-radius: 15px;
+  text-align: left;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.noticia:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.noticia h3 {
+  margin-bottom: 10px;
+  color: #ff4d6d;
+}
+
+.noticia p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* BOTÃO */
+.noticia button {
+  padding: 10px 15px;
+  background: #ff4d6d;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+/* HOVER SUAVE */
+.noticia button:hover {
+  background: #ff758f;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255,77,109,0.5);
+}
+
+/* CLICK */
+.noticia button:active {
+  transform: scale(0.95);
+}
+
+/* RODAPÉ */
+.rodape {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.rodape p {
+  margin: 5px 0;
+}
+
+/* SOBRE */
+.sobre {
+  background: #ffffff;
+}
+
+.sobre h2 {
+  font-family: 'Permanent Marker';
+  margin-bottom: 20px;
+  color: #00bfa6;
+}
+
+/* CULTURA (nova section) */
+.cultura {
+  background: #f9fafc;
+}
+
+.cultura-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cultura .texto {
+  flex: 1;
+}
+
+.cultura .imagem {
+  flex: 1;
+}
+
+.cultura img {
+  width: 80%;      /* diminui para 80% da coluna */
+  max-width: 250px; /* limita tamanho máximo */
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;  /* centraliza dentro da coluna */
+}
+
+/* PLATAFORMAS */
+.plataformas {
+  background: #eef1f5;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  width: 200px;
+  border-radius: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-color: #ff4d6d;
+  box-shadow: 0 0 20px rgba(255,77,109,0.4);
+}
+
+/* FORM */
+.formulario {
+  background: #ffffff;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
