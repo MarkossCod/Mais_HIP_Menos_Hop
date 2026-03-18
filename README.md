@@ -18,7 +18,6 @@ A aplicação foi projetada seguindo padrões modernos de desenvolvimento web, p
 * **Front-end:** Desenvolvido em [Inserir Tecnologia: ex: React 18 / HTML5 & CSS3], utilizando metodologias como BEM (Block Element Modifier) para estilização escalável.
 * **Design de Interface (UI):** Implementação de uma interface inspirada na estética brutalista e urbana, com foco em tipografias de alta legibilidade.
 * **User Experience (UX):** Fluxos de navegação otimizados para redução da carga cognitiva, garantindo que o foco permaneça no conteúdo educativo.
-* **Responsividade:** Aplicação de *Media Queries* e *Flexbox/Grid* para garantir a integridade visual em diversos dispositivos (Mobile First).
 
 ---
 
