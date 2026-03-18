@@ -36,8 +36,7 @@ Para executar este projeto em um ambiente de desenvolvimento local, assegure-se 
 
 ```bash
 # 1. Clonar o repositório
-git clone [https://github.com/seu-usuario/hip-hop-archive.git](https://github.com/seu-usuario/hip-hop-archive.git)
-
+git clone [[https://github.com/seu-usuario/hip-hop-archive.git](https://github.com/MarkossCod/Mais_HIP_Menos_Hop.git)]
 # 2. Acessar o diretório
 cd hip-hop-archive
 
